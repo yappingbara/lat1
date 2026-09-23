@@ -36,10 +36,10 @@ const produk = products.find(item => item.id === id);
 return produk;
 
 }
-console.log(findProductById(products,7))
+console.log(findProductById(products,35))
 
 const rendah = products.filter(item => item.stock < 10)
-console.log(rendah)
+//console.log(rendah)
 
 
 function updateStock(products, id, newStock) 
@@ -47,4 +47,4 @@ function updateStock(products, id, newStock)
     return products.map(p => p.id === id ? { ...p, stock: newStock } : p ); 
    
 }
-console.log(updateStock(products, 21, 21))
+//console.log(updateStock(products, 21, 21))

@@ -32,6 +32,8 @@ const products = [
 ];
 function linearSearch(array, id) 
 { for (let i = 0; i < array.length; i++) {
-     if (array[i].id === id) return i; } return -1; 
-    
+     if (array[i].id === id) return i; 
+    } 
+     return "tidak ada";    
     }
+console.log(linearSearch(products, 21))

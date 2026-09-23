@@ -39,8 +39,14 @@ function priceasc(products) {
             } 
         } 
     } return arr; 
+    
+    // 2 5 3 1 4-1-1 = 3
+ // 2 3 5 1
+
+ // 2 3 1 5
+ // 2 1 3 5 6 7 8 9
 }
-//console.log(priceasc(products))
+console.log(priceasc(products))
 function pricedes(products) { 
     const arr = products.map(price => price.price)
     for (let i = 0; i < arr.length - 1; i++) {
@@ -51,6 +57,6 @@ function pricedes(products) {
         } 
     } return arr; 
 }
-console.log(pricedes(products))
+//console.log(pricedes(products))
  //kenapa arr.length utk j harus dikurang lagi dengan - i
  //kurang rating ama title
